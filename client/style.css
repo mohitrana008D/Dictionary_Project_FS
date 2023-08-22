@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+.about{
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding:20px 2%;
+    /* background: yellowgreen; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+.navbar1212{
+    position:relative;
+    left: 50%;
+}
+.navbar1212 a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    /* margin-left: 35px; */
+    transition: .3s;
+}
+.btn a{
+   text-decoration: none ;
+}
+.body1{
+    background-image: url('./assets/contactus.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color:  black;   
+  }
+  .body1 {
+              color: black;
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              margin: 20px;
+              margin-top: 5%;
+          }
+          .body1 h1 {
+              text-align: center;
+              margin-bottom: 20px;
+          }
+          .contact-info {
+              max-width: 600px;
+              margin: 0 auto;
+          }
+          .contact-info p {
+              margin-bottom: 10px;
+          }
+          .contact-method {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+          }
+          .contact-method img {
+              margin-right: 10px;
+              width: 30px;
+              height: 30px;
+          }
+  #text_font{
+    word-spacing: 3px;
+    flex-wrap: wrap;
+    color: burlywood;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  }
+  .AboutDetails{
+    text-align: center;
+    margin-top: 4cm;
+  }
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center .stars{
+    height: 150px;
+    width: 500px;
+    /* background: black; */
+    text-align: center;
+}
+.stars input{
+    display: none;
+}
+.stars label{
+    float: right;
+    font-size: 100px;
+    color: lightgrey;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+}
+.stars label:before{
+    content: '★';
+}
+.stars input:checked ~ label{
+    color: gold; 
+    text-shadow: 1px 1px #c60;
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label{
+    color: gold;
+}
+.stars input:checked > label:hover,
+.stars input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+.stars .result121{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    font-size: 30px;
+    color: gold;
+    font-family: 'poppins',sans-serif;
+    display: none;
+}
+.stars input:checked ~ .result121{
+    display: block;
+}
+.stars #five:checked ~ .result121:before{
+    content: 'I love it';
+}
+.stars #four:checked ~ .result121:before{
+    content: 'I like it';
+}
+.stars #three:checked ~ .result121:before{
+    content: 'Its good';
+}
+.stars #two:checked ~ .result121:before{
+    content: 'I dont like it';
+}
+.stars #one:checked ~ .result121:before{
+    content: 'I hate it';
+}
+.thanks{
+    text-decoration: solid;
+
+}
+.thanks{
+    font-size: larger;
+    color: gold;
+}
+.stars #five:checked ~ .thanks:after{
+    content: '\A Thankyou for your review';
+}
+.stars #four:checked ~ .thanks:after{
+    content: '\A Thankyou for your review';
+}
+.stars #three:checked ~ .thanks:after{
+    content: '\A Thankyou for your review';
+}
+.stars #two:checked ~ .thanks:after{
+    content: '\A Thankyou for your review';
+}
+.stars #one:checked ~ .thanks:after{
+    content: '\A Thankyou for your review';
+}
+.btn1{
+    font-size: x-large;
+    background-color:aqua;
+    border-color: aqua;
+    border-style:none;
+    border-radius: 10px;
+    
+}
+.btn1 a{
+    color: black;
+    text-decoration: none;
+}
+.btn1:hover a{
+    color: gray;
+}
+.image121{
+    text-align: center;
+    align-items: center;
+}
+.Login {
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: grey;
+    border:none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 0.5cm;
+  }
+.Login a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+.Login:hover{
+    background-color: skyblue;
+}
+.Login a:hover{
+    color: white;
+}
+.welcome_user{
+    margin-top: 2cm;
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+}
