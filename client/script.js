@@ -12,6 +12,9 @@ const options = {
 };
 
 //v=window.localStorage.getItem("myemail")
+const name=localStorage.getItem('myname')
+document.getElementById('myname').textContent=name;
+
 const email=localStorage.getItem('myemail')
 document.getElementById('myemail').textContent=email;
 

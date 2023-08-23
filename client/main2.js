@@ -20,6 +20,9 @@ document.getElementById('btn').addEventListener('click', (e) => {
 	const user_password = document.getElementById('password').value
 	console.log(user_name, user_email, user_password);
 
+	localStorage.setItem("myname",user_name)	//put value name to local storage
+	window.location.href = "index.html";
+
 	localStorage.setItem("myemail",user_email)	//put value email to local storage
 	window.location.href = "index.html";
 	
